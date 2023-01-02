@@ -1,0 +1,181 @@
+# Format of prompt
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$git_metrics\
+$fill\
+$python\
+$c\
+$java\
+$lua\
+$nodejs\
+$time\
+$line_break\
+$character
+"""
+
+[directory]
+style = "bold cyan"
+read_only = " "
+truncation_length = 4
+truncate_to_repo = false
+
+
+[character]
+success_symbol = "[❯](cyan)"
+error_symbol = "[❯](purple)"
+vicmd_symbol = "[❮](green)"
+
+[time]
+disabled = false
+style = "bold white"
+format = "[$time]($style)"
+
+
+[cmd_duration]
+format = "[$duration]($style)"
+style = "yellow"
+
+# Have own symbols
+[aws]
+symbol = "  "
+format = "[$symbol]($style)"
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+style = "blue"
+format = "[$symbol]($style)"
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+format = "[$symbol]($style)"
+
+[docker_context]
+symbol = " "
+format = "[$symbol]($style)"
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[git_branch]
+symbol = " "
+style = "blue"
+format = "[$symbol$branch]($style) "
+
+[golang]
+symbol = " "
+format = "[$symbol]($style)"
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = "⌘ "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+format = "[$symbol]($style)"
+
+[julia]
+symbol = " "
+
+[lua]
+symbol = " "
+format = "[$symbol]($style)"
+
+[memory_usage]
+symbol = " "
+
+[meson]
+symbol = "喝 "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+format = "[$symbol]($style)"
+
+[os.symbols]
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "﯑ "
+Gentoo = " "
+HardenedBSD = "ﲊ "
+Illumos = " "
+Linux = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = " "
+openSUSE = " "
+OracleLinux = " "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = " "
+Solus = "ﴱ "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = " "
+
+[package]
+symbol = " "
+
+[python]
+symbol = " "
+format = "[$symbol]($style)"
+
+[rlang]
+symbol = "ﳒ "
+
+[ruby]
+symbol = " "
+format = "[$symbol]($style)"
+
+[rust]
+symbol = " "
+format = "[$symbol]($style)"
+
+[scala]
+symbol = " "
+
+[spack]
+symbol = "🅢 "
+
